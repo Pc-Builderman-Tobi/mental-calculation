@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang = "de">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="myVisibleUI" class="VisibleUI">
+                <p id="Calculation">Calculation</p>
+                
+                <input type="text" id="UserInput" onKeyPress="handle(event, document.getElementById('UserInput').value)">
+                <input type="button" id ="CheckButton" onclick="Input(document.getElementById('UserInput').value)" value="prüfen">
+                
+                <div class="WinstreakUi" id="myWinstreak">
+                    <img src="" width="65px" height="65px" id="WinstreakImage">
+                    <p id="winstreak">winstreak</p>
+                </div>
+                
+                
+                <input type="image" src="Images/Settings.png" onclick="openNav()" id="SettingButton">
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <div id="UIEnableAddition" class="switch">
+                <input type="checkbox" class="Addition" checked="true" value="On" id="AdditionButton" onclick="OnAndOff('+')">
+                <span class="slider round"></span>
+                <p id="AdditionText" class="Addition">Addition</p>
+            </div>
+            
+            <div class="switch">
+                <input type="checkbox" class="Subtraction" checked="true" value="On" onclick="OnAndOff('-')">
+                <span class="slider round"></span>
+                <p id="SubtractionText" class="Subtraction">Subtraktion</p>
+            </div>
+            
+            <div class="switch">
+                <input type="checkbox" class="Multiplication" checked="true" value="On" onclick="OnAndOff('*')">
+                <span class="slider round"></span>
+                <p id="MultiplicationText" class="Multiplication">Multiplikation</p>
+            </div>
+            
+            <div class="switch">
+                <input type="checkbox" class="Division" checked="true" value="On" onclick="OnAndOff('/')">
+                <span class="slider round"></span>
+                <p id="DivisionText" class="Division">Division</p>
+            </div>
+            
+            <div class="switch">
+                <input type="checkbox" class="fractional" checked="true" value="On" onclick="OnAndOff('#')">
+                <span class="slider round"></span>
+                <p id="fractionalText" class="fractional">Bruchrechnen</p>
+            </div>
+        </div>
+
+        <script src="/main.js"></script>
+    </body>
+</html>

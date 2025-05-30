@@ -1,0 +1,126 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.VisibleUI {
+    height: 100%;
+    width: 100%;
+    margin: 20px auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VisibleUI #Calculation {
+    font-size: 35px;
+}
+
+.VisibleUI #UserInput {
+    margin-left: 20px;
+    font-size: 35px;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+.VisibleUI #CheckButton {
+    margin-left: 20px;
+    font-size: 35px;
+}
+
+.WinstreakUi {
+    display: flex;
+    align-items: center;
+    
+    width: 10%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.WinstreakUi #WinstreakImage {
+    width: 35px;
+    height: 35px;
+}
+
+.WinstreakUi #winstreak{
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+img {
+    position: relative;
+}
+
+#SettingButton {
+    position: absolute;
+    right: 2vw;
+    top: 2vh;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.Slider {
+    width: 60px;
+    height: 34px;
+    position: relative;
+}
+
+.Addition{
+    margin-left: 5px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.Addition #AdditionText{
+    width: 150px;
+}
+
+.Subtraction {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.Multiplication {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.Division {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.fractional {
+    display: inline-block;
+    font-size: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
